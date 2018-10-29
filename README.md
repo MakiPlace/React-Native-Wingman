@@ -28,13 +28,12 @@ $ react-native run-ios
   - [ ] Agenda
   - [ ] Calendars List
   - [ ] Horizontal Calendar List
-<<<<<<< HEAD
 - [ ] Card
 - [ ] Chart
 - [ ] Dropdowns
-- [ ] Flat List
-  - [ ] Flat List Single Column
-  - [ ] Flat List Multi Column
+- [x] Flat List
+  - [x] Flat List Single Column
+  - [x] Flat List Multi Column
 - [ ] Forms
 - [ ] Icons
 - [ ] Images
@@ -48,33 +47,9 @@ $ react-native run-ios
 - [x] Pickers
 - [x] Progress
 - [x] Texts
-- [ ] Share
+- [x] Share
 - [x] Slider
 - [ ] Swipeable
-=======
-- [ ] Card - Thanh
-- [ ] Chart -
-- [ ] Dropdowns - Thanh
-- [x] Flat List - Dat
-  - [x] Single Column
-  - [x] Multi Column
-- [ ] Forms - Thanh
-- [ ] Icons - Thanh
-- [ ] Images - Thanh
-- [ ] List View - Dat
-  - [ ] Single Column
-  - [ ] Grid View
-  - [ ] Paging
-- [ ] Maps - Dat
-- [ ] Menu -
-- [ ] Modals - Dat
-- [x] Pickers - Dat
-- [x] Progress - Dat
-- [x] Texts - Thanh
-- [x] Share - Dat
-- [x] Slider - Dat
-- [ ] Swipeable - Dat
->>>>>>> origin/dattd
   - [ ] Swipeable Flat List
   - [ ] Swipeable List View
 - [ ] Swiper
