@@ -3,12 +3,15 @@
 The aim of React Native Wingman is to provide a simple yet beautiful UI library for creating apps in react native.
 
 ## Installation
+
 To add `React-Native-Wingman` to your project, navigate to your project folder and run following command:
 
 ```
 $ npm i react-native-wingman --save
 ```
+
 ## Try it out
+
 You can run example app by performing these steps:
 
 ```
@@ -19,6 +22,7 @@ $ react-native run-ios
 ```
 
 ## Components
+
 - [x] Activity Indicator
 - [x] Alerts
 - [x] Badges
@@ -37,10 +41,9 @@ $ react-native run-ios
 - [ ] Forms
 - [ ] Icons
 - [ ] Images
-- [ ] List View
-  - [ ] List View Single Column
-  - [ ] Grid View
-  - [ ] List View Paging
+- [x] List View
+  - [x] List View Single Column
+  - [x] Grid View
 - [ ] Maps
 - [ ] Menu
 - [ ] Modals
@@ -58,6 +61,7 @@ $ react-native run-ios
 To be updating ...
 
 ## Examples
+
 - [ ] Walkthrough
 - [ ] Login / Register
 - [ ] E-Commerce

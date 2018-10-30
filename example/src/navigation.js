@@ -27,7 +27,6 @@ import Images from "./screens/Main/Components/Images";
 import ListViews from "./screens/Main/Components/ListViews";
 import SingleColumn from "./screens/Main/Components/ListViews/SingleColumn";
 import GridView from "./screens/Main/Components/ListViews/GridView";
-import Paging from "./screens/Main/Components/ListViews/Paging";
 import Maps from "./screens/Main/Components/Maps";
 import Menu from "./screens/Main/Components/Menu";
 import Modals from "./screens/Main/Components/Modals";
@@ -37,6 +36,8 @@ import Progresss from "./screens/Main/Components/Progress";
 import Shares from "./screens/Main/Components/Shares";
 import Sliders from "./screens/Main/Components/Slider";
 import Swipeable from "./screens/Main/Components/Swipeable";
+import SwipeableListview from "./screens/Main/Components/Swipeable/SwipeableListview";
+import SwipeableFlatlist from "./screens/Main/Components/Swipeable/SwipeableFlatlist";
 import Swiper from "./screens/Main/Components/Swiper";
 import Texts from "./screens/Main/Components/Texts";
 import WebViews from "./screens/Main/Components/WebView";
@@ -209,12 +210,7 @@ const RootNavigator = createStackNavigator(
         title: "GridView"
       }
     },
-    Paging: {
-      screen: Paging,
-      navigationOptions: {
-        title: "Paging"
-      }
-    },
+
     Menu: {
       screen: Menu,
       navigationOptions: {
@@ -243,6 +239,18 @@ const RootNavigator = createStackNavigator(
       screen: Swipeable,
       navigationOptions: {
         title: "Swipeable"
+      }
+    },
+    SwipeableListview: {
+      screen: SwipeableListview,
+      navigationOptions: {
+        title: "Swipeable List View"
+      }
+    },
+    SwipeableFlatlist: {
+      screen: SwipeableFlatlist,
+      navigationOptions: {
+        title: "Swipeable Flat List"
       }
     },
     Swiper: {

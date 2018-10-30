@@ -8,20 +8,11 @@ export default class ListViews extends React.Component {
     this.state = {
       data: [
         { name: "Single Column", routeName: "SingleColumn" },
-        { name: "Grid View", routeName: "GridView" },
-        { name: "Paging", routeName: "Paging" }
+        { name: "Grid View", routeName: "GridView" }
       ]
     };
   }
-  const data = [];
-  for (let i = 0; i < 10; i++) {
-    data.push({
-      first: "Name",
-      last: i,
-      email: "example" + i + "@gmail.com",
-      avatar: require("../../../../assets/img/avatar.png")
-    });
-  }
+
   renderSeparator = () => {
     return (
       <View

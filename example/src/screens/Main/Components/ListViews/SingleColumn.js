@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Text, View, ListView } from "react-native";
-import Row from "./Row";
+import { Text, View, ListView, Image } from "react-native";
 
 import styles from "./styles";
 
@@ -8,7 +7,7 @@ export default class SingleColumn extends Component {
   constructor(props) {
     super(props);
     const data = [];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
       data.push({
         first: "Name",
         last: i,
@@ -26,13 +25,20 @@ export default class SingleColumn extends Component {
 
   render() {
     return (
-      <View style={styles.wrapper}>
-        <ListView
-          dataSource={this.state.dataSource}
-          renderRow={data => <Row {...data} />}
-          renderSeparator={this._renderSeparator}
-        />
-      </View>
+      <ListView
+        dataSource={this.state.dataSource}
+        renderRow={data => <Row {...data} />}
+        renderSeparator={this._renderSeparator}
+      />
     );
   }
 }
+const Row = props => (
+  <View style={styles.options}>
+    <Image style={styles.avatar} source={props.avatar} />
+    <View>
+      <Text>{`${props.first} ${props.last}`}</Text>
+      <Text>{props.email}</Text>
+    </View>
+  </View>
+);

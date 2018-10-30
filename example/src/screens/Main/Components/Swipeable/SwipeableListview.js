@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import { Text, View } from "react-native";
 import styles from "./styles";
 
-export default class Paging extends Component {
+export default class SwipeableListview extends Component {
   render() {
     return (
       <View style={styles.wrapper}>
-        <Text>Paging</Text>
+        <Text>SwipeableFlatList</Text>
       </View>
     );
   }

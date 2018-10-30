@@ -5,7 +5,8 @@ import {
   FlatList,
   ActivityIndicator,
   Image,
-  TextInput
+  TextInput,
+  TouchableOpacity
 } from "react-native";
 import styles from "./styles";
 
@@ -121,7 +122,7 @@ class MultiFlatLists extends Component {
         <FlatList
           data={this.state.data}
           renderItem={({ item }) => (
-            <View
+            <TouchableOpacity
               style={[
                 styles.options,
                 {
@@ -138,7 +139,7 @@ class MultiFlatLists extends Component {
                 }`}</Text>
                 <Text style={styles.exampleText}>{item.email}</Text>
               </View>
-            </View>
+            </TouchableOpacity>
           )}
           numColumns={this.state.numColumns || 1}
           keyExtractor={item => item.email}
