@@ -11,8 +11,7 @@ export default class SwipeableFlatlist extends Component {
       data.push({
         key: i,
         first: "Name",
-        option1: "Remove",
-        option2: "Edit",
+        option: "Remove",
         last: i,
         email: "example" + i + "@gmail.com",
         avatar: require("../../../../assets/img/avatar.png")
@@ -34,10 +33,7 @@ export default class SwipeableFlatlist extends Component {
         renderRight={({ item }) => (
           <View style={styles.rightOption}>
             <View style={styles.userAction}>
-              <Text>{item.option1}</Text>
-            </View>
-            <View style={[styles.userAction, { backgroundColor: "white" }]}>
-              <Text>{item.option2}</Text>
+              <Text>{item.option}</Text>
             </View>
           </View>
         )}
