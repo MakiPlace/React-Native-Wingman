@@ -6,10 +6,7 @@ class SingleFlatLists extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      loading: false,
-      data: [],
-      error: null,
-      refreshing: false
+      data: []
     };
   }
 
@@ -18,7 +15,6 @@ class SingleFlatLists extends Component {
   }
 
   makeRemoteRequest = () => {
-    const { page, seed } = this.state;
     this.setState({ loading: true });
 
     const data = [];
@@ -30,36 +26,6 @@ class SingleFlatLists extends Component {
         avatar: require("../../../../assets/img/avatar.png")
       });
     }
-    console.log(data);
-    this.setState({
-      data: data,
-      loading: false,
-      refreshing: false
-    });
-  };
-
-  handleRefresh = () => {
-    this.setState(
-      {
-        page: 1,
-        seed: this.state.seed + 1,
-        refreshing: true
-      },
-      () => {
-        this.makeRemoteRequest();
-      }
-    );
-  };
-
-  handleLoadMore = () => {
-    this.setState(
-      {
-        page: this.state.page + 1
-      },
-      () => {
-        this.makeRemoteRequest();
-      }
-    );
   };
 
   renderSeparator = () => {
@@ -106,14 +72,9 @@ class SingleFlatLists extends Component {
             </View>
           </View>
         )}
-        keyExtractor={item => item.email}
         ItemSeparatorComponent={this.renderSeparator}
         ListHeaderComponent={this.renderHeader}
         ListFooterComponent={this.renderFooter}
-        onRefresh={this.handleRefresh}
-        refreshing={this.state.refreshing}
-        onEndReached={this.handleLoadMore}
-        onEndReachedThreshold={50}
       />
     );
   }

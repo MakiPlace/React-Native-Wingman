@@ -1,84 +1,48 @@
 import React, { Component } from "react";
-import {
-  View,
-  SwipeableFlatList,
-  Image,
-  Text,
-  TouchableHighlight,
-  Alert
-} from "react-native";
+import { Text, View, Image } from "react-native";
+import { SwipeableFlatList } from "react-native-swipeable-flat-list";
+
 import styles from "./styles";
 
-class SwipeableFlatlist extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: []
-    };
-  }
-  _renderQuickActions() {
-    return (
-      <View>
-        <TouchableHighlight
-          onPress={() => {
-            Alert.alert(
-              "Tips",
-              "You could do something with this edit action!"
-            );
-          }}
-        >
-          <Text>Edit</Text>
-        </TouchableHighlight>
-        <TouchableHighlight
-          style={[styles.actionButton, styles.actionButtonDestructive]}
-          onPress={() => {
-            Alert.alert(
-              "Tips",
-              "You could do something with this remove action!"
-            );
-          }}
-        >
-          <Text style={styles.actionButtonText}>Remove</Text>
-        </TouchableHighlight>
-      </View>
-    );
-  }
-
-  componentDidMount() {
-    this.makeRemoteRequest();
-  }
-
-  makeRemoteRequest = () => {
+export default class SwipeableFlatlist extends Component {
+  render() {
     const data = [];
     for (let i = 0; i < 10; i++) {
       data.push({
+        key: i,
         first: "Name",
+        option1: "Remove",
+        option2: "Edit",
         last: i,
         email: "example" + i + "@gmail.com",
         avatar: require("../../../../assets/img/avatar.png")
       });
     }
-  };
-
-  render() {
     return (
       <SwipeableFlatList
-        data={this.state.data}
-        bounceFirstRowOnMount={true}
-        maxSwipeDistance={160}
+        data={data}
+        key={data.key}
         renderItem={({ item }) => (
-          <View style={styles.row}>
-            <Image style={styles.rowIcon} source={item.avatar} />
+          <View style={styles.options}>
+            <Image style={styles.avatar} source={item.avatar} />
             <View>
               <Text>{`${item.first} ${item.last}`}</Text>
               <Text>{item.email}</Text>
             </View>
           </View>
         )}
-        renderQuickActions={this._renderQuickActions.bind(this)}
+        renderRight={({ item }) => (
+          <View style={styles.rightOption}>
+            <View style={styles.userAction}>
+              <Text>{item.option1}</Text>
+            </View>
+            <View style={[styles.userAction, { backgroundColor: "white" }]}>
+              <Text>{item.option2}</Text>
+            </View>
+          </View>
+        )}
+        backgroundColor={"white"}
       />
     );
   }
 }
-
-export default SwipeableFlatlist;

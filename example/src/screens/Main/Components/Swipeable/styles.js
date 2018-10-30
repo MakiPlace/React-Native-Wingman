@@ -1,27 +1,31 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-  wrapper: {
+  options: {
     flex: 1,
-    alignItems: "center",
-    backgroundColor: "#eee"
-  },
-  row: {
+    height: 100,
     flexDirection: "row",
-    justifyContent: "center",
     alignItems: "center",
-    padding: 10,
-    backgroundColor: "#F6F6F6"
+    backgroundColor: "green",
+    padding: 16
   },
-  rowIcon: {
-    width: 64,
-    height: 64,
-    marginRight: 20
+  rightOption: {
+    height: 100,
+    width: 150,
+    flexDirection: "row",
+    alignItems: "center"
   },
-  rowData: {
-    flex: 1
+  userAction: {
+    height: 100,
+    width: 75,
+    alignItems: "center",
+    backgroundColor: "red",
+    justifyContent: "center"
   },
-  rowDataText: {
-    fontSize: 24
+  avatar: {
+    width: 42,
+    height: 42,
+    borderRadius: 21,
+    marginRight: 16
   }
 });

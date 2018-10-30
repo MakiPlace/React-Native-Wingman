@@ -52,8 +52,8 @@ $ react-native run-ios
 - [x] Texts
 - [x] Share
 - [x] Slider
-- [ ] Swipeable
-  - [ ] Swipeable Flat List
+- [x] Swipeable
+  - [x] Swipeable Flat List
   - [ ] Swipeable List View
 - [ ] Swiper
 - [ ] Web View

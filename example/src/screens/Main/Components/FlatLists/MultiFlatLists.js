@@ -15,20 +15,9 @@ class MultiFlatLists extends Component {
     super(props);
     this.state = {
       filterText: "",
-      loading: false,
       data: [],
-      error: null,
-      refreshing: false,
       numColumns: 2
     };
-    this.handleViewableItemsChanged = this.handleViewableItemsChanged.bind(
-      this
-    );
-    this.viewabilityConfig = { viewAreaCoveragePercentThreshold: 50 };
-  }
-
-  handleViewableItemsChanged(info) {
-    console.log(info);
   }
 
   componentDidMount() {
@@ -57,23 +46,6 @@ class MultiFlatLists extends Component {
 
   _onChangeNumColumns = numColumns => {
     this.setState(() => ({ numColumns: Number(numColumns) }));
-  };
-
-  handleRefresh = () => {
-    this.setState(
-      {
-        refreshing: true
-      },
-      () => {
-        this.makeRemoteRequest();
-      }
-    );
-  };
-
-  handleLoadMore = () => {
-    this.setState(() => {
-      this.makeRemoteRequest();
-    });
   };
 
   renderSeparator = () => {
@@ -142,16 +114,9 @@ class MultiFlatLists extends Component {
             </TouchableOpacity>
           )}
           numColumns={this.state.numColumns || 1}
-          keyExtractor={item => item.email}
           key={this.state.numOfColumns}
           ListHeaderComponent={this.renderHeader}
           ListFooterComponent={this.renderFooter}
-          onRefresh={this.handleRefresh}
-          refreshing={this.state.refreshing}
-          onEndReached={this.handleLoadMore}
-          onEndReachedThreshold={50}
-          onViewableItemsChanged={this.handleViewableItemsChanged}
-          viewabilityConfig={this.viewabilityConfig}
         />
       </View>
     );
