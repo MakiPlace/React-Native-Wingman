@@ -3,7 +3,6 @@ import {
   View,
   Text,
   FlatList,
-  ActivityIndicator,
   Image,
   TextInput,
   TouchableOpacity
@@ -30,6 +29,7 @@ class MultiFlatLists extends Component {
     const data = [];
     for (let i = 0; i < 10; i++) {
       data.push({
+        key: i,
         first: "Name",
         last: i,
         email: "example" + i + "@gmail.com",
@@ -38,9 +38,7 @@ class MultiFlatLists extends Component {
     }
     console.log(data);
     this.setState({
-      data: data,
-      loading: false,
-      refreshing: false
+      data: data
     });
   };
 
@@ -69,12 +67,9 @@ class MultiFlatLists extends Component {
   };
 
   renderFooter = () => {
-    if (!this.state.loading) return null;
-
     return (
       <View style={styles.headerFooter}>
         <Text>LIST FOOTER</Text>
-        <ActivityIndicator animating size="large" />
       </View>
     );
   };
@@ -114,7 +109,7 @@ class MultiFlatLists extends Component {
             </TouchableOpacity>
           )}
           numColumns={this.state.numColumns || 1}
-          key={this.state.numOfColumns}
+          key={this.state.key}
           ListHeaderComponent={this.renderHeader}
           ListFooterComponent={this.renderFooter}
         />

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, FlatList, ActivityIndicator, Image } from "react-native";
+import { View, Text, FlatList, Image } from "react-native";
 import styles from "./styles";
 
 class SingleFlatLists extends Component {
@@ -20,12 +20,16 @@ class SingleFlatLists extends Component {
     const data = [];
     for (let i = 0; i < 10; i++) {
       data.push({
+        key: i,
         first: "Name",
         last: i,
         email: "example" + i + "@gmail.com",
         avatar: require("../../../../assets/img/avatar.png")
       });
     }
+    this.setState({
+      data: data
+    });
   };
 
   renderSeparator = () => {
@@ -34,7 +38,8 @@ class SingleFlatLists extends Component {
         style={{
           height: 1,
           width: "100%",
-          backgroundColor: "#CED0CE"
+          backgroundColor: "#CED0CE",
+          marginLeft: "16%"
         }}
       />
     );
@@ -49,12 +54,9 @@ class SingleFlatLists extends Component {
   };
 
   renderFooter = () => {
-    if (!this.state.loading) return null;
-
     return (
       <View style={styles.headerFooter}>
         <Text>LIST FOOTER</Text>
-        <ActivityIndicator animating size="large" />
       </View>
     );
   };
@@ -63,6 +65,7 @@ class SingleFlatLists extends Component {
     return (
       <FlatList
         data={this.state.data}
+        key={this.state.key}
         renderItem={({ item }) => (
           <View style={styles.options}>
             <Image style={styles.avatar} source={item.avatar} />

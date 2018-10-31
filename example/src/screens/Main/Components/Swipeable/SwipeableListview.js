@@ -31,10 +31,8 @@ export default class SwipeableFlatlist extends Component {
           </View>
         )}
         renderRight={({ item }) => (
-          <View style={styles.rightOption}>
-            <View style={styles.userAction}>
-              <Text>{item.option}</Text>
-            </View>
+          <View style={styles.userAction}>
+            <Text style={styles.textOption}>{item.option}</Text>
           </View>
         )}
         backgroundColor={"white"}
