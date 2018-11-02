@@ -12,7 +12,7 @@ export default StyleSheet.create({
     marginLeft: 0,
     marginRight: 0,
     marginBottom: 0,
-    marginTop: 16
+    marginTop: 16,
   },
 
   boxInput: {
@@ -22,7 +22,21 @@ export default StyleSheet.create({
     height: 56,
     paddingBottom: 10,
     borderBottomWidth: 1,
-    borderBottomColor: "#eeeeee"
+    borderBottomColor: "#eeeeee",
+  },
+
+  textArea: {
+    height: 200,
+    fontSize: 14,
+    color: "#333",
+    borderWidth: 1,
+    backgroundColor: "#ddd",
+    paddingBottom: 10,
+  },
+
+  seLect: {
+    height:50,
+    width: 200,
   },
 
   titleHeader: {

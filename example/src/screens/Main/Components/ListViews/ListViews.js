@@ -13,15 +13,6 @@ export default class ListViews extends React.Component {
       ]
     };
   }
-  const data = [];
-  for (let i = 0; i < 10; i++) {
-    data.push({
-      first: "Name",
-      last: i,
-      email: "example" + i + "@gmail.com",
-      avatar: require("../../../../assets/img/avatar.png")
-    });
-  }
   renderSeparator = () => {
     return (
       <View

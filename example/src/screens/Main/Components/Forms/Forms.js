@@ -5,12 +5,16 @@ import {
   Text,
   Modal,
   TextInput,
-  SafeAreaView
+  SafeAreaView,
+  Picker,
+  RadioForm,
+  radio_props,
 } from "react-native";
 import { Button } from "react-native-elements";
 import Icon from "react-native-vector-icons/FontAwesome";
 import IconAntDesign from "react-native-vector-icons/AntDesign";
 import ElementItemFlatlist from "../../../../Components/ElementItemFlatlist";
+
 import styles from "./styles";
 
 const FloatingLabel = require("react-native-floating-labels");
@@ -18,7 +22,6 @@ const FloatingLabel = require("react-native-floating-labels");
 export default class Forms extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       data: [
         "Fixed Label",
@@ -41,7 +44,7 @@ export default class Forms extends React.Component {
 
     this._toggleModal = this._toggleModal.bind(this);
   }
-
+  
   _renderItems = ({ item, index }) => {
     return (
       <ElementItemFlatlist
@@ -161,19 +164,20 @@ export default class Forms extends React.Component {
       <TextInput
         style={styles.boxInput}
         editable={false}
-        placeholder="Username"
+        placeholder="UserName"
       />
       <TextInput
-        style={styles.boxInput}
+        style={styles.textArea}
         editable={false}
-        placeholder="Password"
+        placeholder="Text"
       />
 
-      <Button
-        backgroundColor="#03A9F4"
-        buttonStyle={[styles.styleButton, { borderRadius: 20 }]}
-        title="Login"
-      />
+      <Picker
+        mode="dropdown"
+        style={styles.seLect}>
+        <Picker.Item label="Java" value="java" />
+        <Picker.Item label="JavaScript" value="js" />
+      </Picker>
     </View>
   );
 
