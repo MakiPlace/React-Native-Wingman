@@ -7,6 +7,11 @@ import {
   Alert,
   SafeAreaView
 } from "react-native";
+import FancyModal from "./FancyModal";
+import BasicModal from "./BasicModal";
+import BottomHalfModal from "./BottomHalfModal";
+import TopHalfModal from "./TopHalfModal";
+
 import styles from "./styles";
 
 export default class Modals extends Component {
@@ -20,39 +25,13 @@ export default class Modals extends Component {
     return (
       <View style={styles.wrapper}>
         <View style={styles.Item}>
-          <Text style={{ fontSize: 28, marginBottom: 10 }}>Basic Modal</Text>
-          <Modal
-            animationType="fade"
-            transparent={false}
-            visible={this.state.modalVisible}
-            onRequestClose={() => {
-              Alert.alert("Modal has been closed.");
-            }}
-          >
-            <SafeAreaView style={{ marginTop: 22 }}>
-              <View style={{ alignItems: "center" }}>
-                <Text>Basic Modal</Text>
+          <BasicModal />
 
-                <TouchableOpacity
-                  style={styles.btnShowModal}
-                  onPress={() => {
-                    this.setModalVisible(!this.state.modalVisible);
-                  }}
-                >
-                  <Text style={{ color: "white" }}>Hide Modal</Text>
-                </TouchableOpacity>
-              </View>
-            </SafeAreaView>
-          </Modal>
+          <FancyModal />
 
-          <TouchableOpacity
-            style={styles.btnShowModal}
-            onPress={() => {
-              this.setModalVisible(true);
-            }}
-          >
-            <Text style={{ color: "white" }}>Show Modal</Text>
-          </TouchableOpacity>
+          <BottomHalfModal />
+
+          <TopHalfModal />
         </View>
       </View>
     );

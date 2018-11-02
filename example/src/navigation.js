@@ -40,7 +40,7 @@ import SwipeableListview from "./screens/Main/Components/Swipeable/SwipeableList
 import SwipeableFlatlist from "./screens/Main/Components/Swipeable/SwipeableFlatlist";
 import Swiper from "./screens/Main/Components/Swiper";
 import Texts from "./screens/Main/Components/Texts";
-import WebViews from "./screens/Main/Components/WebView";
+import WebViews from "./screens/Main/Components/WebViews";
 
 const TAB_ICONS = {
   Home: "home",
@@ -262,7 +262,7 @@ const RootNavigator = createStackNavigator(
     WebViews: {
       screen: WebViews,
       navigationOptions: {
-        title: "WebViews"
+        title: "Web View"
       }
     },
     Badges: {

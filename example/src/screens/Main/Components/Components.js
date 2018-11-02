@@ -203,7 +203,7 @@ export default class Components extends Component {
           name: "text-fields",
           color: "#f4b400"
         },
-        routeName: "WebView"
+        routeName: "WebViews"
       }
     ];
     return (

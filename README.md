@@ -32,15 +32,14 @@ $ react-native run-ios
   - [ ] Agenda
   - [ ] Calendars List
   - [ ] Horizontal Calendar List
-- [ ] Card
+- [x] Card
 - [ ] Chart
-- [ ] Dropdowns
 - [x] Flat List
   - [x] Flat List Single Column
   - [x] Flat List Multi Column
-- [ ] Forms
-- [ ] Icons
-- [ ] Images
+- [>] Forms
+- [>] Icons
+- [x] Images
 - [x] List View
   - [x] List View Single Column
   - [x] Grid View
@@ -54,9 +53,9 @@ $ react-native run-ios
 - [x] Slider
 - [x] Swipeable
   - [x] Swipeable Flat List
-  - [ ] Swipeable List View
+  - [x] Swipeable List View
 - [ ] Swiper
-- [ ] Web View
+- [x] Web View
 
 To be updating ...
 
