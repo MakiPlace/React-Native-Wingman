@@ -5,6 +5,7 @@ import {
 } from "react-navigation";
 
 import Icon from "react-native-vector-icons/FontAwesome";
+
 import Splash from "./screens/Splash";
 import Detail from "./screens/Detail";
 import Home from "./screens/Main/Home";
@@ -12,34 +13,61 @@ import Examples from "./screens/Main/Examples";
 import Components from "./screens/Main/Components";
 
 import ActivityIndicators from "./screens/Main/Components/ActivityIndicators";
+
 import Alerts from "./screens/Main/Components/Alerts";
+
 import Badges from "./screens/Main/Components/Badges";
+
 import Buttons from "./screens/Main/Components/Buttons";
+
 import Calendars from "./screens/Main/Components/Calendars";
+import BasicCalendar from "./screens/Main/Components/Calendars/BasicCalendar";
+import AgendaCalendar from "./screens/Main/Components/Calendars/AgendaCalendar";
+import CalendarsList from "./screens/Main/Components/Calendars/CalendarsList";
+import HorizontalCalendarList from "./screens/Main/Components/Calendars/HorizontalCalendarList";
+
 import Charts from "./screens/Main/Components/Charts";
+
 import Card from "./screens/Main/Components/Card";
+
 import FlatLists from "./screens/Main/Components/FlatLists";
 import SingleFlatLists from "./screens/Main/Components/FlatLists/SingleFlatLists";
 import MultiFlatLists from "./screens/Main/Components/FlatLists/MultiFlatLists";
+
 import Forms from "./screens/Main/Components/Forms";
+
 import Icons from "./screens/Main/Components/Icons";
+
 import Images from "./screens/Main/Components/Images";
+
 import ListViews from "./screens/Main/Components/ListViews";
 import SingleColumn from "./screens/Main/Components/ListViews/SingleColumn";
 import GridView from "./screens/Main/Components/ListViews/GridView";
+
 import Maps from "./screens/Main/Components/Maps";
+
 import Menu from "./screens/Main/Components/Menu";
+
 import Modals from "./screens/Main/Components/Modals";
+
 import Navigations from "./screens/Main/Components/Navigations";
+
 import Pickers from "./screens/Main/Components/Pickers";
+
 import Progresss from "./screens/Main/Components/Progress";
+
 import Shares from "./screens/Main/Components/Shares";
+
 import Sliders from "./screens/Main/Components/Slider";
+
 import Swipeable from "./screens/Main/Components/Swipeable";
 import SwipeableListview from "./screens/Main/Components/Swipeable/SwipeableListview";
 import SwipeableFlatlist from "./screens/Main/Components/Swipeable/SwipeableFlatlist";
+
 import Swiper from "./screens/Main/Components/Swiper";
+
 import Texts from "./screens/Main/Components/Texts";
+
 import WebViews from "./screens/Main/Components/WebViews";
 
 const TAB_ICONS = {
@@ -166,6 +194,30 @@ const RootNavigator = createStackNavigator(
       screen: Calendars,
       navigationOptions: {
         title: "Calendars"
+      }
+    },
+    BasicCalendar: {
+      screen: BasicCalendar,
+      navigationOptions: {
+        title: "Basic Calendar"
+      }
+    },
+    AgendaCalendar: {
+      screen: AgendaCalendar,
+      navigationOptions: {
+        title: "Agenda Calendar"
+      }
+    },
+    CalendarsList: {
+      screen: CalendarsList,
+      navigationOptions: {
+        title: "Calendars List"
+      }
+    },
+    HorizontalCalendarList: {
+      screen: HorizontalCalendarList,
+      navigationOptions: {
+        title: "Horizontal Calendar List"
       }
     },
     Charts: {

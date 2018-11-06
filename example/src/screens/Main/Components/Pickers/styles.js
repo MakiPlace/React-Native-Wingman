@@ -4,11 +4,12 @@ export default StyleSheet.create({
   wrapper: {
     flex: 1,
     alignItems: "center",
-    backgroundColor: "#eee"
+    backgroundColor: "#eee",
+    justifyContent: "center"
   },
   Item: {
-    flex: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    marginTop: "20%"
   }
 });
