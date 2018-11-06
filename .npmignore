@@ -1,6 +1,0 @@
-example
-node_modules
-.vscode
-.DS_Store
-.*
-react-native-wingman*.tgz
