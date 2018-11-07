@@ -7,12 +7,12 @@ permalink: /
 
 # Focus on
 
-{: .fs-4 }
+{: .fs-9 }
 
-The aim of React Native Wingman is to provide an all-in-one UI kit for creating apps in react native. There are many great ui components made by developers all around open source. React Native Wingman takes the hassle of assembling these packages together by giving you a ready made kit with consistent api and look and feel.
-{: .fs-3 .fw-600 }
+Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub pages.
+{: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-purple .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/MakiPlace/React-Native-Wingman){: .btn .fs-5 }
+[Get started now](#getting-started){: .btn .btn-purple .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 }
 
 ---
 
@@ -20,7 +20,7 @@ The aim of React Native Wingman is to provide an all-in-one UI kit for creating 
 
 ### Dependencies
 
-React Native Wingman is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/quickstart/) for more information. Just the Docs requires no special Jekyll plugins and can run on GitHub Pages standard Jekyll compiler.
+Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/quickstart/) for more information. Just the Docs requires no special Jekyll plugins and can run on GitHub Pages standard Jekyll compiler.
 
 ### Installation
 
