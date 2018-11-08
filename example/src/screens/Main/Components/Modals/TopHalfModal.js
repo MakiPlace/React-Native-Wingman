@@ -23,7 +23,7 @@ export default class TopHalfModal extends Component {
       <View>
         <Modal
           transparent={true}
-          animationType="slide"
+          animationType="fade"
           visible={this.state.modalVisible}
           onRequestClose={() => {
             Alert.alert("Modal has been closed.");
@@ -34,7 +34,7 @@ export default class TopHalfModal extends Component {
               flex: 1,
               alignItems: "center",
               justifyContent: "flex-start",
-              backgroundColor: "rgba(0, 0, 0, 0.2)"
+              backgroundColor: "rgba(0, 0, 0, 0.3)"
             }}
           >
             <View
@@ -53,7 +53,7 @@ export default class TopHalfModal extends Component {
                   color: "black"
                 }}
               >
-                This modal was presented with slide animation .{"\n"} It is
+                This modal was presented with fade animation .{"\n"} It is
                 currently display in top halft mode
               </Text>
               <TouchableOpacity
