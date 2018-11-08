@@ -5,78 +5,45 @@ nav_order: 1
 permalink: /
 ---
 
-# Focus on
+# Elegantly Simple React Native UI Kit
 
-{: .fs-9 }
+{: .fs-4 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub pages.
-{: .fs-6 .fw-300 }
+React Native Wingman is being developed with the intention of providing app developers with an elegantly simple user interface (UI) kit to create apps in React Native quickly and conveniently. Besides optimizing React Native’s available components and suggesting libraries, sample apps created by combining different components are also provided. The package is both Android and iOS compatible.
+{: .fs-4 .fw-300 }
 
 [Get started now](#getting-started){: .btn .btn-purple .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/MakiPlace/React-Native-Wingman){: .btn .fs-5 }
 
 ---
 
-## Getting started
+## Installation
 
-### Dependencies
-
-Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/quickstart/) for more information. Just the Docs requires no special Jekyll plugins and can run on GitHub Pages standard Jekyll compiler.
-
-### Installation
-
-1. Install the Ruby Gem
+{: .fs-4 }
+To add React-Native-Wingman to your project, navigate to your project folder and run following command:
+{: .fs-4 }
 
 ```bash
-$ gem install just-the-docs
+yarn add react-native-wingman
+# or with npm
+npm install --save react-native-wingman
 ```
 
-```yaml
-# .. or add it to your your Jekyll site’s Gemfile
-gem "just-the-docs"
-```
+## Try it out
 
-2. Add Just the Docs to your Jekyll site’s `config.yml`
-
-```yaml
-theme: "just-the-docs"
-```
-
-3. _Optional:_ Initialize search data (creates `search-data.json`)
+{: .fs-4 }
+You can run example app by performing these steps:
+{: .fs-4 }
 
 ```bash
-$ bundle exec just-the-docs rake search:init
+git clone git@github.com:MakiPlace/React-Native-Wingman.git
+cd React-Native-Wingman/example
+npm install
+react-native run-ios
+react-native run-android
+
 ```
-
-3. Run you local Jekyll server
-
-```bash
-$ jekyll serve
-```
-
-```bash
-# .. or if you're using a Gemfile (bundler)
-$ bundle exec jekyll serve
-```
-
-4. Point your web browser to [http://localhost:4000](http://localhost:4000)
-
----
-
-## About the project
-
-Just the Docs is &copy; 2017 by [Patrick Marsceill](http://patrickmarsceill.com).
-
-### License
-
-Just the Docs is distributed by an [MIT license](https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt).
 
 ### Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/pmarsceill/just-the-docs#contributing).
-
-### Code of Conduct
-
-Just the Docs is committed to fostering a welcoming community.
-
-[View our Code of Conduct](https://github.com/pmarsceill/just-the-docs/tree/master/CODE_OF_CONDUCT.md) on our GitHub repository.
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/MakiPlace/React-Native-Wingman).

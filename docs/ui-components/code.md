@@ -2,17 +2,19 @@
 layout: default
 title: Code
 parent: UI Components
-nav_order: 5
+nav_order: 8
 ---
 
 # Code
+
 {:.no_toc}
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 
 ---
 

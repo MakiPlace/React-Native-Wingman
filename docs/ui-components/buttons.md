@@ -1,18 +1,20 @@
 ---
 layout: default
-title: Buttons
+title: Button
 parent: UI Components
-nav_order: 2
+nav_order: 4
 ---
 
-# Buttons
+# Button
+
 {:.no_toc}
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 
 ---
 
@@ -40,21 +42,61 @@ nav_order: 2
 [Link button](http://example.com/){: .btn .btn-green }
 
 [Link button](http://example.com/){: .btn .btn-outline }
-```
+
+````
+
+
+
 
 ### Button element
+
+
+
+
+
+
 
 GitHub flavored markdown does not support the `button` element, so you'll have to use inline HTML for this:
 
 
+
+
+
+
+
+
+
+
+
 <div class="code-example">
 
+
+
+
+
+
+
 <button type="button" name="button" class="btn">Button element</button>
 
+
+
+
+
+
+
 </div>
+
+
+
 ```html
+
+
+
 <button type="button" name="button" class="btn">Button element</button>
-```
+
+
+
+````
 
 ---
 
@@ -97,6 +139,7 @@ Use the [margin utility classes]({{ site.baseurl }}{% link docs/utilities/utilit
 
 [Button with more space](http://example.com/){: .btn .btn-green .mr-4}
 [Button ](http://example.com/){: .btn .btn-blue }
+
 </div>
 ```markdown
 [Button with space](http://example.com/){: .btn .btn-purple .mr-2}
@@ -104,4 +147,8 @@ Use the [margin utility classes]({{ site.baseurl }}{% link docs/utilities/utilit
 
 [Button with more space](http://example.com/){: .btn .btn-green .mr-4}
 [Button ](http://example.com/){: .btn .btn-blue }
+
+```
+
+
 ```
