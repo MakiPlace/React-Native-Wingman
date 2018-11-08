@@ -1,6 +1,6 @@
 {
   "name": "react-native-wingman",
-  "version": "0.0.1-dev",
+  "version": "0.0.2-dev",
   "description": "Simple Yet Beautiful React Native UI Library",
   "main": "index.js",
   "repository": {

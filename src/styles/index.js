@@ -1,4 +1,4 @@
 import Base from "./Base";
-import { Colors } from "./Constant";
+import { Colors } from "./constant";
 
 export { Base, Colors };

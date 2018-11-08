@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity, Text } from "react-native";
-import { Colors } from "../styles/Constant";
+import { Colors } from "../styles/constant";
 
 export default class WingmanButton extends React.PureComponent {
   componentWillMount() {
