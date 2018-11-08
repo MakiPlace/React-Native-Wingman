@@ -1,6 +1,6 @@
 # React Native Wingman
 
-The aim of React Native Wingman is to provide a simple yet beautiful UI library for creating apps in react native.
+React Native Wingman is being developed with the intention of providing app developers with an elegantly simple user interface (UI) kit to create apps in React Native quickly and conveniently. Besides optimizing React Native’s available components and suggesting libraries, sample apps created by combining different components are also provided. The package is both **Android** and **iOS** compatible.
 
 ## Installation
 
