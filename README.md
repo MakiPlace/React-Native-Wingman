@@ -23,29 +23,29 @@ $ react-native run-ios
 
 ## Components
 
-- [x] Activity Indicator
 - [x] Alerts
 - [x] Badges
 - [x] Buttons
-- [ ] Calendars
-  - [ ] Calendars
-  - [ ] Agenda
-  - [ ] Calendars List
-  - [ ] Horizontal Calendar List
+- [x] Calendars
+  - [x] Calendars
+  - [x] Agenda
+  - [x] Calendars List
+  - [x] Horizontal Calendar List
 - [x] Card
 - [ ] Chart
 - [x] Flat List
   - [x] Flat List Single Column
   - [x] Flat List Multi Column
-- [>] Forms
-- [>] Icons
+- [x] Forms
+- [x] Icons
 - [x] Images
 - [x] List View
   - [x] List View Single Column
   - [x] Grid View
+- [x] Loading
 - [ ] Maps
 - [ ] Menu
-- [ ] Modals
+- [x] Modals
 - [x] Pickers
 - [x] Progress
 - [x] Texts
@@ -54,7 +54,7 @@ $ react-native run-ios
 - [x] Swipeable
   - [x] Swipeable Flat List
   - [x] Swipeable List View
-- [ ] Swiper
+- [x] Swiper
 - [x] Web View
 
 To be updating ...

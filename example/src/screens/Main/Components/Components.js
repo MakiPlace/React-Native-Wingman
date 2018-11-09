@@ -13,14 +13,6 @@ export default class Components extends Component {
   render() {
     const items = [
       {
-        name: "Activity Indicators",
-        icon: {
-          name: "replay",
-          color: "#4285f4"
-        },
-        routeName: "ActivityIndicators"
-      },
-      {
         name: "Alerts",
         icon: {
           name: "warning",
@@ -108,6 +100,14 @@ export default class Components extends Component {
           color: "#f4b400"
         },
         routeName: "ListViews"
+      },
+      {
+        name: "Loading",
+        icon: {
+          name: "replay",
+          color: "#4285f4"
+        },
+        routeName: "Loading"
       },
       {
         name: "Maps",
