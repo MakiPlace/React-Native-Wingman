@@ -12,7 +12,7 @@ import Home from "./screens/Main/Home";
 import Examples from "./screens/Main/Examples";
 import Components from "./screens/Main/Components";
 
-import ActivityIndicators from "./screens/Main/Components/ActivityIndicators";
+import Loading from "./screens/Main/Components/Loading";
 
 import Alerts from "./screens/Main/Components/Alerts";
 
@@ -178,10 +178,10 @@ const RootNavigator = createStackNavigator(
         title: "Texts"
       }
     },
-    ActivityIndicators: {
-      screen: ActivityIndicators,
+    Loading: {
+      screen: Loading,
       navigationOptions: {
-        title: "Activity Indicators"
+        title: "Loading"
       }
     },
     Navigations: {
