@@ -27,13 +27,11 @@ export default class Maps extends Component {
   render() {
     return (
       <View style={styles.wrapper}>
-        {/* <MapView
+        <MapView
           style={styles.map}
           region={this.state.region}
           onRegionChange={this.onRegionChange.bind(this)}
-        /> */}
-
-        <Text>Maps</Text>
+        />
       </View>
     );
   }

@@ -1,11 +1,11 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { AreaChart, Grid } from "react-native-svg-charts";
-import * as shape from "d3-shape";
+import { BarChart, Grid } from "react-native-svg-charts";
 import styles from "./styles";
 
-export default class AreaCharts extends React.PureComponent {
+export default class BarCharts extends React.PureComponent {
   render() {
+    const fill = "rgb(134, 65, 244)";
     const data = [
       50,
       10,
@@ -13,8 +13,10 @@ export default class AreaCharts extends React.PureComponent {
       95,
       -4,
       -24,
+      null,
       85,
-      91,
+      undefined,
+      0,
       35,
       53,
       -53,
@@ -26,16 +28,15 @@ export default class AreaCharts extends React.PureComponent {
 
     return (
       <View>
-        <Text style={styles.title}>Area Chart</Text>
-        <AreaChart
+        <Text style={styles.title}>Bar Chart</Text>
+        <BarChart
           style={{ height: 200 }}
           data={data}
-          contentInset={{ top: 30, bottom: 30 }}
-          curve={shape.curveNatural}
           svg={{ fill: "#4285f4" }}
+          contentInset={{ top: 30, bottom: 30 }}
         >
           <Grid />
-        </AreaChart>
+        </BarChart>
       </View>
     );
   }

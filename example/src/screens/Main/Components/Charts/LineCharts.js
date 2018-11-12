@@ -1,10 +1,9 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { AreaChart, Grid } from "react-native-svg-charts";
-import * as shape from "d3-shape";
+import { LineChart, Grid } from "react-native-svg-charts";
 import styles from "./styles";
 
-export default class AreaCharts extends React.PureComponent {
+export default class LineCharts extends React.PureComponent {
   render() {
     const data = [
       50,
@@ -26,16 +25,15 @@ export default class AreaCharts extends React.PureComponent {
 
     return (
       <View>
-        <Text style={styles.title}>Area Chart</Text>
-        <AreaChart
+        <Text style={styles.title}>Line Chart</Text>
+        <LineChart
           style={{ height: 200 }}
           data={data}
-          contentInset={{ top: 30, bottom: 30 }}
-          curve={shape.curveNatural}
-          svg={{ fill: "#4285f4" }}
+          svg={{ stroke: "#4285f4" }}
+          contentInset={{ top: 20, bottom: 20 }}
         >
           <Grid />
-        </AreaChart>
+        </LineChart>
       </View>
     );
   }
