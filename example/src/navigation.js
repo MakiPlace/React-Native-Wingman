@@ -30,6 +30,8 @@ import GridView from "./screens/Main/Components/ListViews/GridView";
 import Paging from "./screens/Main/Components/ListViews/Paging";
 import Maps from "./screens/Main/Components/Maps";
 import Menu from "./screens/Main/Components/Menu";
+import MyHomeScreen from "./screens/Main/Components/Menu";
+import MyNotificationsScreen from  "./screens/Main/Components/Menu";
 import Modals from "./screens/Main/Components/Modals";
 import Navigations from "./screens/Main/Components/Navigations";
 import Pickers from "./screens/Main/Components/Pickers";
@@ -219,6 +221,18 @@ const RootNavigator = createStackNavigator(
       screen: Menu,
       navigationOptions: {
         title: "Menu"
+      }
+    },
+    MyHomeScreen: {
+      screen: MyHomeScreen,
+      navigationOptions: {
+        title: "My Home Screen"
+      }
+    },
+    MyNotificationsScreen: {
+      screen: MyNotificationsScreen,
+      navigationOptions: {
+        title: " MyNotificationsScreen"
       }
     },
     Maps: {

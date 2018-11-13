@@ -11,18 +11,7 @@ export default class FlatLists extends React.Component {
         { name: "Multi Column", routeName: "MultiFlatLists" }
       ]
     };
-  }
-  renderSeparator = () => {
-    return (
-      <View
-        style={{
-          height: 1,
-          width: "100%",
-          backgroundColor: "#CED0CE"
-        }}
-      />
-    );
-  };
+  } 
 
   render() {
     return (

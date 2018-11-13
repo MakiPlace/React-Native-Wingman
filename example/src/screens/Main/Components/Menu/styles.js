@@ -5,5 +5,11 @@ export default StyleSheet.create({
     flex: 1,
     alignItems: "center",
     backgroundColor: "#eee"
+  },
+  container:{
+    flex:1,
+    backgroundColor:"#00BCD4",
+    justifyContent:"center",
+    alignContent:"center",
   }
 });

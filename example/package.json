@@ -27,7 +27,7 @@
     "react-native-textarea": "^1.0.2",
     "react-native-vector-icons": "^6.0.2",
     "react-native-wingman": "file:../react-native-wingman-0.0.1-dev.tgz",
-    "react-navigation": "^2.18.0"
+    "react-navigation": "^2.18.2"
   },
   "devDependencies": {
     "@babel/runtime": "^7.1.2",

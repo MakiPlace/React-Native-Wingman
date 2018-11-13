@@ -68,7 +68,6 @@ export default class Buttons extends Component {
 
           <View style={styles.displayInline}>
             <Button
-              style={styles.button}
               primary
               rounded
               title="Primary Rounded"

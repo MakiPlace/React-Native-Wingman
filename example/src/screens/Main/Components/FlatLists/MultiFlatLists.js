@@ -20,13 +20,10 @@ class MultiFlatLists extends Component {
       refreshing: false,
       numColumns: 2
     };
-    this.handleViewableItemsChanged = this.handleViewableItemsChanged.bind(
-      this
-    );
     this.viewabilityConfig = { viewAreaCoveragePercentThreshold: 50 };
   }
 
-  handleViewableItemsChanged(info) {
+  handleViewableItemsChanged = (info) => {
     console.log(info);
   }
 

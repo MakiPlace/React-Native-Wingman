@@ -1,13 +1,22 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
-import styles from "./styles";
+import { Text, View,TouchableOpacity,Image,Button } from "react-native";
+import {DrawerNavigator} from 'react-navigation';
 
-export default class Menu extends Component {
-  render() {
-    return (
-      <View style={styles.wrapper}>
-        <Text>Menu</Text>
-      </View>
-    );
+import Page1 from './Page1';
+import Page2 from './Page2';
+import Page3 from './Page3';
+
+const MyDrawerNavigator = DrawerNavigator({
+  Page1: {
+    screen: Page1
+  },
+  Page2: {
+    screen: Page2
+  },
+  Page3: {
+    screen: Page3
   }
-}
+}, {
+  drawerWidth: 300
+});
+export default MyDrawerNavigator;
