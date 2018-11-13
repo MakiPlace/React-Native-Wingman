@@ -1,13 +1,23 @@
 import React, { Component } from "react";
 import { Text, View } from "react-native";
 import styles from "./styles";
+import {DrawerNavigator} from 'react-navigation';
 
-export default class Menu extends Component {
-  render() {
-    return (
-      <View style={styles.wrapper}>
-        <Text>Menu</Text>
-      </View>
-    );
-  }
-}
+import HomeScreen from './HomeScreen.js';
+import InfoScreen from './InfoScreen.js';
+import SettingScreen from './SettingScreen.js';
+
+
+const navigation = DrawerNavigator({
+    HomeScreen:{
+        screen: HomeScreen
+    },
+    InfoScreen:{
+        screen: InfoScreen
+    },
+    SettingScreen:{
+        screen: SettingScreen
+    },
+})
+
+export default navigation

@@ -1,7 +1,8 @@
 import React from "react";
 import {
   createStackNavigator,
-  createBottomTabNavigator
+  createBottomTabNavigator,
+  DrawerNavigator
 } from "react-navigation";
 
 import Icon from "react-native-vector-icons/FontAwesome";
@@ -51,6 +52,13 @@ import Menu from "./screens/Main/Components/Menu";
 import Modals from "./screens/Main/Components/Modals";
 
 import Navigations from "./screens/Main/Components/Navigations";
+import TopNavigation from "./screens/Main/Components/Navigations/TopNavigation";
+import Tab1 from "./screens/Main/Components/Navigations/Tab1";
+import Tab2 from "./screens/Main/Components/Navigations/Tab2";
+import Tab3 from "./screens/Main/Components/Navigations/Tab3";
+
+import BottomNavigation from "./screens/Main/Components/Navigations/BottomNavigation";
+
 
 import Pickers from "./screens/Main/Components/Pickers";
 
@@ -69,6 +77,9 @@ import Swiper from "./screens/Main/Components/Swiper";
 import Texts from "./screens/Main/Components/Texts";
 
 import WebViews from "./screens/Main/Components/WebViews";
+
+
+
 
 const TAB_ICONS = {
   Home: "home",
@@ -190,6 +201,38 @@ const RootNavigator = createStackNavigator(
         title: "Navigations"
       }
     },
+    TopNavigation: {
+      screen: TopNavigation,
+      navigationOptions: {
+        title: "TopNavigation"
+      }
+    },
+    BottomNavigation: {
+      screen: BottomNavigation,
+      navigationOptions: {
+        title: "BottomNavigation"
+      }
+    },
+    Tab1: {
+      screen: Tab1,
+      navigationOptions: {
+        title: "Tab1"
+      }
+    },
+
+    Tab2: {
+      screen: Tab2,
+      navigationOptions: {
+        title: "Tab2"
+      }
+    },
+    Tab3: {
+      screen: Tab3,
+      navigationOptions: {
+        title: "Tab3"
+      }
+    },
+
     Calendars: {
       screen: Calendars,
       navigationOptions: {
@@ -269,6 +312,7 @@ const RootNavigator = createStackNavigator(
         title: "Menu"
       }
     },
+
     Maps: {
       screen: Maps,
       navigationOptions: {
