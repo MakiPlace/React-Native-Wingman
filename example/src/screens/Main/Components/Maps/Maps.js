@@ -9,8 +9,8 @@ export default class Maps extends Component {
     super(props);
     this.state = {
       region: {
-        latitude: 37.78825,
-        longitude: -122.4324,
+        latitude: 21.0094898,
+        longitude: 105.8253634,
         latitudeDelta: 0.0922,
         longitudeDelta: 0.0421
       }
@@ -26,7 +26,7 @@ export default class Maps extends Component {
 
   render() {
     return (
-      <View style={styles.wrapper}>
+      <View style={styles.container}>
         <MapView
           style={styles.map}
           region={this.state.region}
