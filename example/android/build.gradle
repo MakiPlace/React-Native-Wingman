@@ -1,13 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext {
-        buildToolsVersion = "27.0.3"
-        minSdkVersion = 16
-        compileSdkVersion = 27
-        targetSdkVersion = 26
-        supportLibVersion = "27.1.1"
-    }
     repositories {
         jcenter()
         google()
@@ -22,14 +15,29 @@ buildscript {
 
 allprojects {
     repositories {
+        google()
+        maven {
+            url 'https://maven.google.com/'
+        }
+				// Add jitpack repository (added by react-native-spinkit)
+				maven { url "https://jitpack.io" }
         mavenLocal()
         jcenter()
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url "$rootDir/../node_modules/react-native/android"
         }
-        google()
     }
+}
+ext {
+    buildToolsVersion = "27.0.3"
+    minSdkVersion = 16
+    compileSdkVersion = 27
+    targetSdkVersion = 26
+    supportLibVersion = "27.1.1"
+    androidMapsUtilsVersion = "0.5+"
+    googlePlayServicesVersion = "11.8.0"
+
 }
 
 

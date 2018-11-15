@@ -20,6 +20,8 @@
     "react-native-elements": "^0.19.1",
     "react-native-floating-labels": "^1.1.8",
     "react-native-loader": "^1.2.1",
+    "react-native-maps": "^0.22.1",
+    "react-native-navigation": "^1.1.492",
     "react-native-progress": "^3.5.0",
     "react-native-snap-carousel": "^3.7.5",
     "react-native-super-grid": "^2.4.3",
