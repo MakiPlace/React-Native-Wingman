@@ -11,6 +11,7 @@ export default StyleSheet.create({
     alignItems: "center"
   },
   map: {
+    flex: 1,
     position: "absolute",
     top: 0,
     left: 0,
